@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj": {}
+    "d:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj": {
+    "d:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "d:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "d:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\mezgi\\.nuget\\packages\\",
-        "outputPath": "D:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\obj\\",
+        "outputPath": "d:\\Dersler\\CENG Yılı\\2. Dönem\\CENG 382\\Project\\Ceng382_23_24_s_201812034\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\VS3\\NuGetPackages"

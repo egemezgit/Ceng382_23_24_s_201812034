@@ -59,13 +59,6 @@
    
 <main class="form-signin w-100 m-auto">
 
-    <form id = "SecondForm">
-        <input type = "text" id = "firstnumber"><br>
-        <label for ="firstnumber">First Number:</label><br>
-        <input type = "text" id = "secondnumber"><br>
-        <label for ="secondnumber">Second Number:</label><br>
-    </form>
-
   <form id = "MyForm">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
@@ -87,6 +80,12 @@
         </br>
     </div>
     
+
+
+
+
+
+    
     <button class="btn btn-primary w-100 py-2"id = "signin" type="submit">Sign in</button>
        <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
   </form>
@@ -94,9 +93,78 @@
 <div id="buttonActions">
     <h1>Button Actions</h1>
     <button id="toggleButton">Hide/Show</button>
-    <button id="calculateSumBtn">Calculate Sum</button>
   </div>
-   
+
+
+
+
+
+<div class="container">
+    <input type="text" id="num1" placeholder="Enter first number">
+    <input type="text" id="num2" placeholder="Enter second number">
+    <br>
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <div id="resultBox" class="result-box"></div>
+</div>
+
+<style>
+    /* Add some basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+        margin: 5px;
+        width: 100px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    .result-box {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        padding: 5px;
+    }
+</style>
+
+
+<script>
+    function calculateSum() {
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+            var sum = num1 + num2;
+            document.getElementById("resultBox").innerHTML = "The sum is: " + sum;
+        } else {
+            document.getElementById("resultBox").innerHTML = "Please enter valid numbers.";
+        }
+    }
+</script>
+
+
+
 
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script type="text/javascript">
@@ -115,19 +183,3 @@
     });
 </script>
 
-<script type="text/javascript">
-    const toggleBtn = document.getElementById('calculateSumBtn');
-    const elementsToToggle = document.getElementById('SecondForm');
-    const elementsToToggle2 = document.getElementById('MyForm');
-
-    toggleBtn.addEventListener('click', function() {
-    if (elementsToToggle.style.display === 'block') {
-        elementsToToggle.style.display = 'none';
-        elementsToToggle2.style.display = 'none';
-    } 
-    else
-    {
-        elementsToToggle.style.display = 'block';
-    }
-    });
-</script>
