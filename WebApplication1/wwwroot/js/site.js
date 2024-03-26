@@ -63,7 +63,10 @@
         setTheme(getPreferredTheme())
       }
     })
-  
+    var area = document.getElementById("hidden_element");
+    function hide() {
+        area.style.display = "none";
+    }
     window.addEventListener('DOMContentLoaded', () => {
       showActiveTheme(getPreferredTheme())
   

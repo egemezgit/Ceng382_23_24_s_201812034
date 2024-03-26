@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<h>
-    Welcome to New Page!
-</h>
+
+
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -32,6 +31,7 @@
         <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
         <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
       </button>
+
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
           <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
@@ -58,8 +58,15 @@
     </div>
    
 <main class="form-signin w-100 m-auto">
-  <form>
-    <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+
+    <form id = "SecondForm">
+        <input type = "text" id = "firstnumber"><br>
+        <label for ="firstnumber">First Number:</label><br>
+        <input type = "text" id = "secondnumber"><br>
+        <label for ="secondnumber">Second Number:</label><br>
+    </form>
+
+  <form id = "MyForm">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
@@ -76,9 +83,51 @@
       <label class="form-check-label" for="flexCheckDefault">
         Remember me
       </label>
+        </br>
+        </br>
     </div>
-    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+    
+    <button class="btn btn-primary w-100 py-2"id = "signin" type="submit">Sign in</button>
+       <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
   </form>
 </main>
+<div id="buttonActions">
+    <h1>Button Actions</h1>
+    <button id="toggleButton">Hide/Show</button>
+    <button id="calculateSumBtn">Calculate Sum</button>
+  </div>
+   
+
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    const toggleBtn = document.getElementById('toggleButton');
+    const elementsToToggle = document.getElementById('MyForm');
+    toggleBtn.addEventListener('click', function() {
+    if (elementsToToggle.style.display === 'none') {
+        elementsToToggle.style.display = 'block';
+        toggleBtn.textContent = 'Hide';
+    } 
+    else
+    {
+        elementsToToggle.style.display = 'none';
+        toggleBtn.textContent = 'Show';
+    }
+    });
+</script>
+
+<script type="text/javascript">
+    const toggleBtn = document.getElementById('calculateSumBtn');
+    const elementsToToggle = document.getElementById('SecondForm');
+    const elementsToToggle2 = document.getElementById('MyForm');
+
+    toggleBtn.addEventListener('click', function() {
+    if (elementsToToggle.style.display === 'block') {
+        elementsToToggle.style.display = 'none';
+        elementsToToggle2.style.display = 'none';
+    } 
+    else
+    {
+        elementsToToggle.style.display = 'block';
+    }
+    });
+</script>
