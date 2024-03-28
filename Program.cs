@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 
 public class RoomData
 {
-    public Room[] Room { get; set; }
+    public Room[] Room { get; set; } = Array.Empty<Room>();
 }
 
 public class Room
